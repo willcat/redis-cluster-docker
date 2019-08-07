@@ -1,0 +1,49 @@
+version: "3"
+services: 
+    redis-cluster-6380:
+        image: redis:4.0.14
+        volumes:
+            - ./conf/redis-6380.conf:/usr/local/etc/redis/redis.conf
+            - ./log:/var/log/redis
+            - ./data:/data/redis
+        command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
+
+    redis-cluster-6381:
+        image: redis:4.0.14
+        volumes:
+            - ./conf/redis-6381.conf:/usr/local/etc/redis/redis.conf
+            - ./log:/var/log/redis
+            - ./data:/data/redis
+        command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
+
+    redis-cluster-6382:
+        image: redis:4.0.14
+        volumes:
+            - ./conf/redis-6382.conf:/usr/local/etc/redis/redis.conf
+            - ./log:/var/log/redis
+            - ./data:/data/redis
+        command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
+
+    redis-cluster-6383:
+        image: redis:4.0.14
+        volumes:
+            - ./conf/redis-6383.conf:/usr/local/etc/redis/redis.conf
+            - ./log:/var/log/redis
+            - ./data:/data/redis
+        command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
+
+    redis-cluster-6384:
+        image: redis:4.0.14
+        volumes:
+            - ./conf/redis-6384.conf:/usr/local/etc/redis/redis.conf
+            - ./log:/var/log/redis
+            - ./data:/data/redis
+        command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
+
+    redis-cluster-6385:
+        image: redis:4.0.14
+        volumes:
+            - ./conf/redis-6385.conf:/usr/local/etc/redis/redis.conf
+            - ./log:/var/log/redis
+            - ./data:/data/redis
+        command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
