@@ -2,6 +2,8 @@ version: "3"
 services: 
     redis-cluster-6380:
         image: redis:4.0.14
+        ports:
+            - "6380:6380"
         volumes:
             - ./conf/redis-6380.conf:/usr/local/etc/redis/redis.conf
             - ./log:/var/log/redis
@@ -10,6 +12,8 @@ services:
 
     redis-cluster-6381:
         image: redis:4.0.14
+        ports:
+            - "6381:6381"
         volumes:
             - ./conf/redis-6381.conf:/usr/local/etc/redis/redis.conf
             - ./log:/var/log/redis
@@ -18,6 +22,8 @@ services:
 
     redis-cluster-6382:
         image: redis:4.0.14
+        ports:
+            - "6382:6382"
         volumes:
             - ./conf/redis-6382.conf:/usr/local/etc/redis/redis.conf
             - ./log:/var/log/redis
@@ -26,6 +32,8 @@ services:
 
     redis-cluster-6383:
         image: redis:4.0.14
+        ports:
+            - "6383:6383"
         volumes:
             - ./conf/redis-6383.conf:/usr/local/etc/redis/redis.conf
             - ./log:/var/log/redis
@@ -34,6 +42,8 @@ services:
 
     redis-cluster-6384:
         image: redis:4.0.14
+        ports:
+            - "6384:6384"
         volumes:
             - ./conf/redis-6384.conf:/usr/local/etc/redis/redis.conf
             - ./log:/var/log/redis
@@ -42,6 +52,8 @@ services:
 
     redis-cluster-6385:
         image: redis:4.0.14
+        ports:
+            - "6385:6385"
         volumes:
             - ./conf/redis-6385.conf:/usr/local/etc/redis/redis.conf
             - ./log:/var/log/redis
