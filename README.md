@@ -1,2 +1,2 @@
-# 开启
-`docker-compose up -d`
+- 开启 `docker-compose up -d`
+- 握手、主从流程可以参考原文[docker-compose搭建redis集群及可用性实践](https://juejin.im/post/5d4afaaf518825403769dd44)
