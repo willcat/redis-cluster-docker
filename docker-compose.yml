@@ -1,7 +1,8 @@
 version: "3"
 services: 
     redis-cluster-6380:
-        image: redis:4.0.14
+        image: redis:5.0.5-alpine
+        container_name: node-80
         ports:
             - "6380:6380"
         volumes:
@@ -11,7 +12,8 @@ services:
         command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
 
     redis-cluster-6381:
-        image: redis:4.0.14
+        image: redis:5.0.5-alpine
+        container_name: node-81
         ports:
             - "6381:6381"
         volumes:
@@ -21,7 +23,8 @@ services:
         command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
 
     redis-cluster-6382:
-        image: redis:4.0.14
+        image: redis:5.0.5-alpine
+        container_name: node-82
         ports:
             - "6382:6382"
         volumes:
@@ -31,7 +34,8 @@ services:
         command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
 
     redis-cluster-6383:
-        image: redis:4.0.14
+        image: redis:5.0.5-alpine
+        container_name: node-83
         ports:
             - "6383:6383"
         volumes:
@@ -41,7 +45,8 @@ services:
         command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
 
     redis-cluster-6384:
-        image: redis:4.0.14
+        image: redis:5.0.5-alpine
+        container_name: node-84
         ports:
             - "6384:6384"
         volumes:
@@ -51,7 +56,8 @@ services:
         command: sh -c "redis-server /usr/local/etc/redis/redis.conf"
 
     redis-cluster-6385:
-        image: redis:4.0.14
+        image: redis:5.0.5-alpine
+        container_name: node-85
         ports:
             - "6385:6385"
         volumes:
